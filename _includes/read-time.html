@@ -1,21 +1,2 @@
-{% if post.layout != post %}
-  {% assign words = post.content | strip_html | number_of_words %}
-  {% if words < 180 %}
-    阅读时间: 少于1分钟
-  {% elsif words < 360 %}
-    阅读时间: 1分钟
-  {% else %}
-    阅读时间: {{ words | divided_by:180 }}分钟
-  {% endif %}
-{% endif %}
-
-{% if post.layout == post %}
-  {% assign words = content | number_of_words %}
-  {% if words < 180 %}
-    阅读时间: 少于1分钟
-  {% elsif words < 360 %}
-    阅读时间: 1分钟
-  {% else %}
-    阅读时间: {{ words | divided_by:180 }}分钟
-  {% endif %}
-{% endif %}
+{% assign minutes = page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 300 | plus: 1 %}
+    阅读时间: {{ minutes }}分钟
