@@ -1,7 +1,32 @@
-<div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
-  <div class="sharing-icons">
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-  </div>
+<div class="sharing-prompt">{{ site.data.settings.sharing_button_prompt }}</div>
+<div class="sharing-icons">
+    <a><i class="fa fa-weixin" aria-hidden="true" onclick="showQrCode()"></i></a>
+    <a href="http://service.weibo.com/share/share.php?title={{ page.title }} | {{ site.title }}&amp;url={{ site.github.url }}{{ page.url }}&amp;pic={{ site.github.url }}/assets/img/{{ page.image }}"
+       target="_blank"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }} | {{ site.title }}&amp;url={{ site.github.url }}{{ page.url }}"
+       target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }} | {{ site.title }}"
+       target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://plus.google.com/share?url={{ site.github.url }}{{ page.url }}" target="_blank"><i
+            class="fa fa-google-plus" aria-hidden="true"></i></a>
 </div>
+<div id="weixin-share-qrcode"></div>
+</div>
+
+<script>
+    function showQrCode() {
+        let qrCodeDiv = document.getElementById('weixin-share-qrcode');
+        let style = qrCodeDiv.getAttribute('style');
+        if (!style) {
+            qrCodeDiv.setAttribute('style', 'display: block');
+        } else {
+            qrCodeDiv.removeAttribute('style');
+        }
+    }
+
+    genQrCode();
+
+    function genQrCode() {
+        new QRCode('weixin-share-qrcode', {width: 100, height: 100, text: location.href});
+    }
+</script>

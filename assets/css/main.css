@@ -140,7 +140,7 @@ hr {
 */
 
 .post-container {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .posts {
@@ -154,8 +154,13 @@ hr {
     margin-top: 3px;
     margin-bottom: 1rem;
     color: #9a9a9a;
-    /*font-family: 'Quattrocento Sans', sans-serif;*/
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.sharing-prompt {
+    display: inline-block;
+    color: #9a9a9a;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 30rem) {
@@ -363,6 +368,11 @@ th, td {
   Social media icons
 */
 
+.sharing-icons {
+    display: inline-block;
+    padding-left: 10px;
+}
+
 .sharing-icons a {
     padding-right: 10px;
 }
@@ -508,4 +518,42 @@ th, td {
 
 .fa-rss-square:hover {
     color: #ff6600;
+}
+
+.fa-weixin {
+    padding: 5px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-weixin:hover {
+    color: #80d43f;
+    cursor: pointer;
+}
+
+.fa-weibo {
+    padding: 5px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+.fa-weibo:hover {
+    color: #e51c31;
+}
+
+#weixin-share-qrcode {
+    position: absolute;
+    display: none;
+}
+
+#weixin-share-qrcode img {
+    position: relative;
+    left: 90px;
+    box-shadow: 5px 5px 20px 0px #cacaca;
 }
