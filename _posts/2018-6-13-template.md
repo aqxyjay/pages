@@ -2,7 +2,7 @@
 layout: post
 title: "博客模板"
 author: "Zhangchunxin"
-categories: 模板
+categories: template
 tags: [模板]
 image: template.jpg
 ---
