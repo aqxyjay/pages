@@ -11,6 +11,7 @@ menu:
 - {name: '爱情', path: 'menu', url: 'love.html'}
 - {name: '学习', path: 'menu', url: 'study.html'}
 - {name: '工作', path: 'menu', url: 'work.html'}
+- {name: '链接', path: 'menu', url: 'link.html'}
 - {name: '归档', path: 'menu', url: 'archive.html'}
 - {name: '关于我', path: 'menu', url: 'about.html'}
 
