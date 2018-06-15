@@ -6,9 +6,11 @@ disqus:
 #google-ID: 'UA-112060364-1'
 
 menu:
+- {name: '生活', path: 'menu', url: 'life.html'}
+- {name: '技术', path: 'menu', url: 'tech.html'}
+- {name: '爱', path: 'menu', url: 'love.html'}
 - {name: '归档', path: 'menu', url: 'archive.html'}
 - {name: '关于我', path: 'menu', url: 'about.html'}
-# - {name: '联系我', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
