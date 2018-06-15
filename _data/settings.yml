@@ -29,6 +29,8 @@ pagination:
   next_page: '下一页'
   previous_page: '上一页'
 
+view_post_detail: '查看详细内容'
+
 sharing_button_prompt: '点击分享:'
 
 related_posts: '看看其他的:'
