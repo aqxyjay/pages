@@ -2,7 +2,7 @@
 layout: post
 title: "橙帽子乐队"
 author: "Zhangchunxin"
-categories: [life, work]
+categories: [work]
 tags: [生活, 随记, 硬装实践]
 image: 2018-5-5-band-of-orange-cap/00.jpg
 ---
