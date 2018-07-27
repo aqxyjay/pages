@@ -4,7 +4,7 @@ title: "橙帽子乐队"
 author: "Zhangchunxin"
 categories: [work]
 tags: [生活, 随记, 硬装实践]
-image: 2018-5-5-band-of-orange-cap/00.jpg
+image: https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/00.jpg
 ---
 
 # 一
@@ -17,7 +17,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 先给大家介绍我们的鼓手，阿峰。
 
-![01](/assets/img/2018-5-5-band-of-orange-cap/01.jpg)
+![01](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/01.jpg)
 
 阿峰，本名余立峰，一米八大高个，长得像吴亦凡。
 
@@ -27,7 +27,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 再给大家介绍一下我们的贝斯手，阿鑫。
 
-![02](/assets/img/2018-5-5-band-of-orange-cap/02.jpg)
+![02](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/02.jpg)
 
 阿鑫，本名张春鑫，对，没错，就是我本人。大众脸，微胖。
 
@@ -37,7 +37,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 今天就先介绍我们橙帽子乐队的两名乐手。接下来请欣赏一下我们乐队在站上的风采。
 
-![03](/assets/img/2018-5-5-band-of-orange-cap/03.jpg)
+![03](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/03.jpg)
 
 期待橙帽子乐队的演出吧！
 
@@ -49,7 +49,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 今天的日志依然是介绍“橙帽子乐队”的成员，首先是我们的键盘手，阿浩。
 
-![04](/assets/img/2018-5-5-band-of-orange-cap/04.jpg)
+![04](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/04.jpg)
 
 阿浩，本名张浩。年轻老员工。
 
@@ -60,7 +60,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 下面介绍乐队的客串三角铁手阿宇和吉他手小克。
 
-![05](/assets/img/2018-5-5-band-of-orange-cap/05.jpg)
+![05](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/05.jpg)
 
 阿宇，本名张翔宇，三角铁二十二级（基地最强）。他是从蓝帽子乐队作为乐队总监，客串到橙帽子的，
 
@@ -72,7 +72,7 @@ image: 2018-5-5-band-of-orange-cap/00.jpg
 
 最后，给大家介绍橙帽子乐队的主唱，阿瀛。
 
-![06](/assets/img/2018-5-5-band-of-orange-cap/06.jpg)
+![06](https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-5-band-of-orange-cap/06.jpg)
 
 阿瀛，本名王楚瀛，摇滚乐演唱技巧十二级。
 
