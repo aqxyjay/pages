@@ -4,7 +4,7 @@ title: "有关端子的回忆"
 author: "Zhangchunxin"
 categories: life
 tags: [生活, 随记, 硬装实践]
-image: https://blog-1256181510.cos.ap-chengdu.myqcloud.com/2018-5-6-memory-of-conductor-terminal/conductor-terminal.jpg
+image: https://img.zhangchunxin.com/blog/2018-5-6-memory-of-conductor-terminal/conductor-terminal.jpg
 ---
 
 端子。
