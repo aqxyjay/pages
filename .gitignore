@@ -6,3 +6,5 @@ Gemfile.lock
 .DS_Store
 yulib.resource
 yulib.config
+start.bat
+clean.bat
