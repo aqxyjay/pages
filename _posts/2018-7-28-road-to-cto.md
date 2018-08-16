@@ -25,13 +25,13 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 针对这5中能力，作者分别绘制了技术总监、技术VP、首席架构师和CTO的能力模型雷达图：
 
  - 技术总监
-    <div id="tv-radar-chart"></div>
+    <div id="tv-radar-chart" class="radar-chart"></div>
  - 技术VP
-    <div id="vp-radar-chart"></div>
+    <div id="vp-radar-chart" class="radar-chart"></div>
  - 首席架构师
-    <div id="ca-radar-chart"></div>
+    <div id="ca-radar-chart" class="radar-chart"></div>
  - CTO
-    <div id="cto-radar-chart"></div>
+    <div id="cto-radar-chart" class="radar-chart"></div>
 
 回顾在华为近三年的工作，从管理岗转型为技术岗，虽然被任命为“架构师”，但我知道自己的能力离真正意义上的“架构师”仍有很大差距，这种差距让我有非常强烈的危机感，同时也很迷茫。
 
@@ -62,8 +62,8 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 
 
 <script type="text/babel">
-const {Radar, RadarChart, PolarGrid, Legend,
-         PolarAngleAxis, PolarRadiusAxis} = Recharts;
+const {Radar, RadarChart, PolarGrid, Tooltip,
+         PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer} = Recharts;
 
 const data = [
     { subject: '领导力', tv: 4, vp: 6, ca: 4, cto: 9 },
@@ -76,13 +76,14 @@ const data = [
 const TVRadarChart = React.createClass({
 	render () {
   	return (
-	<ResponsiveContainer>
-    	  <RadarChart data={data}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-            <Radar name="技术总监" dataKey="tv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-          </RadarChart>
+	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
+        <RadarChart data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Tooltip />
+          <Radar name="技术总监" dataKey="tv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
 	</ResponsiveContainer>
     );
   }
@@ -91,13 +92,14 @@ const TVRadarChart = React.createClass({
 const VPRadarChart = React.createClass({
 	render () {
   	return (
-	<ResponsiveContainer>
-    	  <RadarChart data={data}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-            <Radar name="技术VP" dataKey="vp" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-          </RadarChart>
+	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
+        <RadarChart data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Tooltip />
+          <Radar name="技术VP" dataKey="vp" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
 	</ResponsiveContainer>
     );
   }
@@ -106,13 +108,14 @@ const VPRadarChart = React.createClass({
 const CARadarChart = React.createClass({
 	render () {
   	return (
-	<ResponsiveContainer>
-    	  <RadarChart data={data}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-            <Radar name="首席架构师" dataKey="ca" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-          </RadarChart>
+	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
+        <RadarChart data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Tooltip />
+          <Radar name="首席架构师" dataKey="ca" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
 	</ResponsiveContainer>
     );
   }
@@ -121,13 +124,14 @@ const CARadarChart = React.createClass({
 const CTORadarChart = React.createClass({
 	render () {
   	return (
-	<ResponsiveContainer>
-    	  <RadarChart data={data}>
-            <PolarGrid />
-            <PolarAngleAxis dataKey="subject" />
-            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-            <Radar name="CTO" dataKey="cto" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-          </RadarChart>
+	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
+        <RadarChart data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Tooltip />
+          <Radar name="CTO" dataKey="cto" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
 	</ResponsiveContainer>
     );
   }
