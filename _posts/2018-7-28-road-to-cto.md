@@ -76,12 +76,14 @@ const data = [
 const TVRadarChart = React.createClass({
 	render () {
   	return (
-    	<RadarChart width={450} height={350} data={data}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-          <Radar name="技术总监" dataKey="tv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-        </RadarChart>
+	<ResponsiveContainer>
+    	  <RadarChart data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+            <Radar name="技术总监" dataKey="tv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          </RadarChart>
+	</ResponsiveContainer>
     );
   }
 })
@@ -89,12 +91,14 @@ const TVRadarChart = React.createClass({
 const VPRadarChart = React.createClass({
 	render () {
   	return (
-    	<RadarChart width={450} height={350} data={data}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-          <Radar name="技术VP" dataKey="vp" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-        </RadarChart>
+	<ResponsiveContainer>
+    	  <RadarChart data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+            <Radar name="技术VP" dataKey="vp" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          </RadarChart>
+	</ResponsiveContainer>
     );
   }
 })
@@ -102,12 +106,14 @@ const VPRadarChart = React.createClass({
 const CARadarChart = React.createClass({
 	render () {
   	return (
-    	<RadarChart width={450} height={350} data={data}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-          <Radar name="首席架构师" dataKey="ca" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-        </RadarChart>
+	<ResponsiveContainer>
+    	  <RadarChart data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+            <Radar name="首席架构师" dataKey="ca" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          </RadarChart>
+	</ResponsiveContainer>
     );
   }
 })
@@ -115,12 +121,14 @@ const CARadarChart = React.createClass({
 const CTORadarChart = React.createClass({
 	render () {
   	return (
-    	<RadarChart width={450} height={350} data={data}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
-          <Radar name="CTO" dataKey="cto" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-        </RadarChart>
+	<ResponsiveContainer>
+    	  <RadarChart data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+            <Radar name="CTO" dataKey="cto" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          </RadarChart>
+	</ResponsiveContainer>
     );
   }
 })
