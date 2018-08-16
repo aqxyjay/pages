@@ -557,3 +557,8 @@ th, td {
     left: 90px;
     box-shadow: 5px 5px 20px 0px #cacaca;
 }
+
+.recharts-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}

@@ -28,7 +28,16 @@
     <!--src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">-->
     <!--</script>-->
 
-    <script type="text/javascript" src="{{ site.github.url }}/assets/js/qrcode.min.js"/>
+    <script type="text/javascript" src="{{ site.github.url }}/assets/js/qrcode.min.js"></script>
+
+    <!-- Use react -->
+    {% if page.react %}
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.24/browser.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/react@15.6.2/dist/react-with-addons.min.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/react-dom@15.6.2/dist/react-dom.min.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/prop-types/prop-types.min.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/recharts/umd/Recharts.min.js"></script>
+    {% endif %}
 
     <!-- Google Analytics -->
     <!--{% include google-analytics.html %}-->

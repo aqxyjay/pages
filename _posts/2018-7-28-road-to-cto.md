@@ -2,6 +2,7 @@
 layout: post
 title: "通往CTO之路"
 author: "Zhangchunxin"
+react: true
 categories: work
 tags: [工作,职业规划]
 image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
@@ -24,13 +25,13 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 针对这5中能力，作者分别绘制了技术总监、技术VP、首席架构师和CTO的能力模型雷达图：
 
  - 技术总监
-![技术总监](https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/01.jpg)
+    <div id="tv-radar-chart"></div>
  - 技术VP
-![技术VP](https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/02.jpg)
+    <div id="vp-radar-chart"></div>
  - 首席架构师
-![首席架构师](https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/03.jpg)
+    <div id="ca-radar-chart"></div>
  - CTO
-![CTO](https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/04.jpg)
+    <div id="cto-radar-chart"></div>
 
 回顾在华为近三年的工作，从管理岗转型为技术岗，虽然被任命为“架构师”，但我知道自己的能力离真正意义上的“架构师”仍有很大差距，这种差距让我有非常强烈的危机感，同时也很迷茫。
 
@@ -58,3 +59,86 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 **目标**：这个目标就是**好好学习，好好参与，好好做人**。
 
 我对这条通往CTO之路充满了信心，我相信路的终点会有高山，也有彩虹。
+
+
+<script type="text/babel">
+const {Radar, RadarChart, PolarGrid, Legend,
+         PolarAngleAxis, PolarRadiusAxis} = Recharts;
+
+const data = [
+    { subject: '领导力', tv: 4, vp: 6, ca: 4, cto: 9 },
+    { subject: '文化构造能力', tv: 2, vp: 5, ca: 3, cto: 9 },
+    { subject: '人员管理能力', tv: 7, vp: 8, ca: 6, cto: 9 },
+    { subject: '体系搭建能力', tv: 3, vp: 9, ca: 7, cto: 8 },
+    { subject: '技术实力', tv: 7, vp: 8, ca: 9, cto: 8 },
+];
+
+const TVRadarChart = React.createClass({
+	render () {
+  	return (
+    	<RadarChart width={450} height={350} data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Radar name="技术总监" dataKey="tv" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
+    );
+  }
+})
+
+const VPRadarChart = React.createClass({
+	render () {
+  	return (
+    	<RadarChart width={450} height={350} data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Radar name="技术VP" dataKey="vp" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
+    );
+  }
+})
+
+const CARadarChart = React.createClass({
+	render () {
+  	return (
+    	<RadarChart width={450} height={350} data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Radar name="首席架构师" dataKey="ca" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
+    );
+  }
+})
+
+const CTORadarChart = React.createClass({
+	render () {
+  	return (
+    	<RadarChart width={450} height={350} data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={90} domain={[0,10]} orientation="left" />
+          <Radar name="CTO" dataKey="cto" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+        </RadarChart>
+    );
+  }
+})
+
+ReactDOM.render(
+  <TVRadarChart />,
+  document.getElementById('tv-radar-chart')
+);
+ReactDOM.render(
+  <VPRadarChart />,
+  document.getElementById('vp-radar-chart')
+);
+ReactDOM.render(
+  <CARadarChart />,
+  document.getElementById('ca-radar-chart')
+);
+ReactDOM.render(
+  <CTORadarChart />,
+  document.getElementById('cto-radar-chart')
+);
+</script>
