@@ -13,7 +13,7 @@ image: https://img.zhangchunxin.com/blog/2018-07-01-trip-of-mba-exam/00.jpg
 
 ---
 
-## 一、报名
+## 报名
 
 去年9月，我和婉儿去探望她舅爷，一位国企退休的高管。
 
@@ -37,7 +37,7 @@ image: https://img.zhangchunxin.com/blog/2018-07-01-trip-of-mba-exam/00.jpg
 
 回去的车上想起来，我教材还没买！
 
-## 二、学习
+## 学习
 
 第二天，买了一套MBA真题回来。
 
@@ -45,7 +45,7 @@ image: https://img.zhangchunxin.com/blog/2018-07-01-trip-of-mba-exam/00.jpg
 
 我们还是来说说考试吧。
 
-## 三、笔试
+## 考试
 
 ### 综合考试
 
