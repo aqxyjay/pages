@@ -15,10 +15,11 @@ tags: [前端,MBA,西安交通大学]
 使用Chrome、Edge和IE浏览器，点击“课程评教”按钮，没有任何响应。
 
 **规避方案：**
-1. 确认已经登录VPN（如果是校园内网可以跳过此步）
+1. 确认已经登录VPN
 2. 在浏览器地址栏输入如下地址，可以直接打开评价系统
 https://vpn.xjtu.edu.cn/web/1/http/0/gste.xjtu.edu.cn/index.do
-（校园内网的直接树如的地址应该是 https://gste.xjtu.edu.cn/index.do，未验证）
+
+*如果是校园内网，输入的地址应该是 https://gste.xjtu.edu.cn/index.do，暂未验证。*
 
 ![02](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/02.jpg)
 
