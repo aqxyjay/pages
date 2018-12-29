@@ -34,19 +34,13 @@ https://vpn.xjtu.edu.cn/web/1/http/0/gste.xjtu.edu.cn/index.do
 ![04](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/04.jpg)
 
 **规避方案：**
-1. 在课程评教页面，点击“填表”按钮，打开“研究生课程评价填表”网页
-![05](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/05.jpg)
-2. 按键盘右上角的F12，打开浏览器控制台
+1. 在上图的网页，按键盘右上角的F12，打开浏览器控制台(Console)
 ![06](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/06.jpg)
-3. 在浏览器控制台中粘贴如下两行代码，敲回车，展示滚动条
+2. 在浏览器控制台中粘贴如下两行代码，敲回车，展示滚动条
 ```javascript
 document.querySelector('.webix_window').style.position = '';
 document.querySelector('.webix_layout_form').style.overflowY = 'scroll';
 ```
 ![07](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/07.jpg)
-4. 关闭控制台，拖动滚动条填写全部评价即可
+3. 点击浏览器控制台右上角的×，关闭控制台，拖动滚动条填写全部评价即可
 ![08](https://img.zhangchunxin.com/blog/2018-12-28-xjtu-course-evalute-system-bug-avoid/08.jpg)
-
----
-
-*已经好多年没有见过这么烂的网页了。*
