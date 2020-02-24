@@ -25,12 +25,16 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 针对这5中能力，作者分别绘制了技术总监、技术VP、首席架构师和CTO的能力模型雷达图：
 
  - 技术总监
+    
     <div id="tv-radar-chart" class="radar-chart"></div>
  - 技术VP
+    
     <div id="vp-radar-chart" class="radar-chart"></div>
  - 首席架构师
+    
     <div id="ca-radar-chart" class="radar-chart"></div>
  - CTO
+    
     <div id="cto-radar-chart" class="radar-chart"></div>
 
 回顾在华为近三年的工作，从管理岗转型为技术岗，虽然被任命为“架构师”，但我知道自己的能力离真正意义上的“架构师”仍有很大差距，这种差距让我有非常强烈的危机感，同时也很迷茫。
@@ -46,7 +50,7 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 **计划**：  
   - 将工作中使用到的微服务技术栈夯实，补齐短板
   - 根据自己的兴趣爱好，扩展技术视野，学习研究热点技术
-  
+
 2. **加强团队技术氛围，锻炼体系搭建能力**  
 在华为研发体系，一直是“流程”在约束团队能够高质量、高效的产出。但是，随着公司的流程减负、DevOps的推行，一夜之间每个人都开始反感流程。没了流程的约束，团队的产出效率高了，但是质量下降非常严重。  
 **目标**：我现在对流程要求太过苛刻，造成团队氛围比较压抑，因此我打算**先成为团队成员喜欢的技术带头人**。
@@ -64,7 +68,6 @@ image: https://img.zhangchunxin.com/blog/2018-07-28-road-to-cto/00.jpg
 <script type="text/babel">
 const {Radar, RadarChart, PolarGrid, Tooltip,
          PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer} = Recharts;
-
 const data = [
     { subject: '领导力', tv: 4, vp: 6, ca: 4, cto: 9 },
     { subject: '文化构造能力', tv: 2, vp: 5, ca: 3, cto: 9 },
