@@ -3,6 +3,7 @@ layout: post
 title: "西交大课程评价系统问题的规避方案"
 author: "Zhangchunxin"
 categories: tech
+published: false
 tags: [前端,MBA,西安交通大学]
 ---
 
