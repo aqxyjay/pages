@@ -149,7 +149,7 @@ hr {
     list-style: none;
 }
 
-.post-date {
+.post-date .for-record {
     display: block;
     margin-top: 3px;
     margin-bottom: 1rem;
