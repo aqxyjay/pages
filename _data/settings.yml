@@ -1,7 +1,7 @@
 # Change to true for Disqus comments
-disqus:
-  comments: true
-  disqus_shortname: 'zhangchunxin'
+# disqus:
+#   comments: true
+#   disqus_shortname: 'zhangchunxin'
 
 #google-ID: 'UA-112060364-1'
 
