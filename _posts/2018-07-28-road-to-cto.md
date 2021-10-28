@@ -76,7 +76,7 @@ const data = [
     { subject: '技术实力', tv: 7, vp: 8, ca: 9, cto: 8 },
 ];
 
-const TVRadarChart = React.createClass({
+class TVRadarChart extends React.Component {
 	render () {
   	return (
 	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
@@ -90,9 +90,9 @@ const TVRadarChart = React.createClass({
 	</ResponsiveContainer>
     );
   }
-})
+}
 
-const VPRadarChart = React.createClass({
+class VPRadarChart extends React.Component {
 	render () {
   	return (
 	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
@@ -106,9 +106,9 @@ const VPRadarChart = React.createClass({
 	</ResponsiveContainer>
     );
   }
-})
+}
 
-const CARadarChart = React.createClass({
+class CARadarChart extends React.Component {
 	render () {
   	return (
 	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
@@ -122,9 +122,9 @@ const CARadarChart = React.createClass({
 	</ResponsiveContainer>
     );
   }
-})
+}
 
-const CTORadarChart = React.createClass({
+class CTORadarChart extends React.Component {
 	render () {
   	return (
 	<ResponsiveContainer width="100%" aspect={4.0/3.0}>
@@ -138,7 +138,7 @@ const CTORadarChart = React.createClass({
 	</ResponsiveContainer>
     );
   }
-})
+}
 
 ReactDOM.render(
   <TVRadarChart />,
